@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Shortened URL</h1>
+  <p>Here's your shortened URL:</p>
+  <div class="shortened-url">
+      <a href="{{ base_url }}{{ shortened_url.short_code }}">{{ base_url }}{{ shortened_url.short_code }}</a>
+  </div>
+{% endblock %}
